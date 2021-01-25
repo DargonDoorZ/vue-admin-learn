@@ -30,7 +30,7 @@ export default {
         },
         tooltip: {},
         xAxis: {
-          data: ["衬衫", "羊毛衫", "雪纺衫", "裤子", "高跟鞋", "袜子"],
+          data: ["衬衫", "羊毛衫", "雪纺衫", "裤子", "高跟鞋", "野餐"],
         },
         yAxis: {},
         series: [
@@ -44,7 +44,7 @@ export default {
       this.myChart.resize();
       window.removeEventListener("resize", () => _handleResize, false);
       window.addEventListener("resize", _handleResize, false);
-      let _that = this;
+      const _that = this;
       function _handleResize() {
         _that.myChart.resize();
       }
